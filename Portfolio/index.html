@@ -177,8 +177,21 @@
     setTimeout(() => {
       loader.style.display = "none";
     }, minDisplayTime);
+    typeWriter();
   });
-     const theP = document.getElementsByClassName("myname")[0];
+  // Add event listener to navigation links
+  document.addEventListener('DOMContentLoaded', function() {
+     const navLinks = document.querySelectorAll('.navcontainer a');
+     navLinks.forEach(link => {
+         link.addEventListener('click', function() {
+             const targetId = link.getAttribute('href');
+             const targetElement = document.querySelector(targetId);
+             targetElement.scrollIntoView({ behavior: 'smooth' });
+         });
+     });
+ });
+ 
+const theP = document.getElementsByClassName("myname")[0];
 const myName = "Hey! I am Winifred.";
 let index = 0;
  
@@ -193,19 +206,6 @@ if(index < myName.length){
 index++
  }
  typeWriter()
-
-  // Add event listener to navigation links
-  document.addEventListener('DOMContentLoaded', function() {
-     const navLinks = document.querySelectorAll('.navcontainer a');
-     navLinks.forEach(link => {
-         link.addEventListener('click', function() {
-             const targetId = link.getAttribute('href');
-             const targetElement = document.querySelector(targetId);
-             targetElement.scrollIntoView({ behavior: 'smooth' });
-         });
-     });
- });
- 
 
 
 const arrow = document.getElementById("arrow");
