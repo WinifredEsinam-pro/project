@@ -535,9 +535,9 @@ font-variation-settings:
         .navcontainer > .logoimage {
           width: 80px; /* Logo takes up more space on small screens */
           height: 70px;
-          top: 10%;
+          top: 7%;
           margin-top: 0px;
-          margin-left: 0;
+          margin-left: -20px;
         
           /* margin-bottom: -20px; */
         
@@ -550,10 +550,10 @@ font-variation-settings:
     @media (max-width: 320px) {
       .navcontainer > .logoimage {
         width: 90px; /* Slightly larger for very small screens */
-        height: 30px;
+        height: 40px;
         margin-left: 0;
         margin-bottom: 0px;
-        top: 10%
+        top:2%
       }
     
       #home > .myimage {
@@ -762,11 +762,19 @@ font-variation-settings:
   }
 }
 @media (max-width: 480px) {
+  /* footer{
+    height: 50px;
+  } */
+  footer>.social-icons{
+   margin-bottom: 0%;
+  }
   footer>.copyright-section{
     text-align: center;
     /* align-items: center; */
     margin-left: 0%;
-    padding-right: 13%;
+    padding-right: 8%;
+    padding-bottom: 0px;
+
   }
   .lightbox {
           position: fixed;
