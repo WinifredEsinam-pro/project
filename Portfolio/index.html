@@ -166,7 +166,22 @@
 </body>
 </html>
  <script>
-  
+  const theP = document.getElementsByClassName("myname")[0];
+const myName = "Hey! I am Winifred.";
+let index = 0;
+ 
+
+ function typeWriter(){
+if(index < myName.length){
+  theP.innerHTML += myName.charAt(index);
+  setTimeout(function(){
+    typeWriter()
+  }, 100);
+}
+index++
+ }
+ typeWriter()
+
   window.addEventListener("load", function() {
     const loader = document.getElementById("loader-overlay");
 
@@ -191,21 +206,6 @@
      });
  });
  
-const theP = document.getElementsByClassName("myname")[0];
-const myName = "Hey! I am Winifred.";
-let index = 0;
- 
-
- function typeWriter(){
-if(index < myName.length){
-  theP.innerHTML += myName.charAt(index);
-  setTimeout(function(){
-    typeWriter()
-  }, 100);
-}
-index++
- }
- typeWriter()
 
 
 const arrow = document.getElementById("arrow");
