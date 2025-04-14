@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/png" href="11.png">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div id="loader-overlay">
+    <div class="spinner"></div>
+  </div>
+    <div class="container">
+      <section id="home" class="homesection">
+        <header>
+       <div class="navcontainer">
+            <img src="Black_Gold_Modern_Aesthetic_Initial_Logo__1_-removebg-preview.png" class="logoimage">
+           <nav>
+            <ul>
+               <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+           </nav>
+        </div>
+      </header>
+      <div id="myname">
+            <p class="myname"></p>
+          </div>
+           <!--<p>I'm <span class="typed" data-typed-items="Designer, Aspiring Develpoer, Aspiring IT Tech">Designer</span></p>-->
+            <img class="myimage" src="11.png">
+          
+        </section>
+        <section id="projects" style="padding: 2px 0px 50px 0px ;  background-color: #fffefe; ">
+          <h1 >Projects</h1>
+          <div class="images"style="padding-top: -10px">
+<img src="1.jpg" data-caption="Burger Flyer">
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <span class="close">&times;</span>
+    <img src="" alt="" class="lightbox-image">
+    <p class="lightbox-caption"></p>
+  </div>
+</div>
+
+<img src="2.jpg" data-caption="Wedding Invitation Flyer"  >
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <span class="close">&times;</span>
+    <img src="" alt="" class="lightbox-image">
+    <p class="lightbox-caption"></p>
+  </div>
+</div>
+<img src="5.jpg" data-caption="Strawberry Drink Flyer" style="width: 220px; height: 300px;">
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <span class="close">&times;</span>
+    <img src="" alt="" class="lightbox-image">
+    <p class="lightbox-caption"></p>
+  </div>
+</div>
+
+<img src="7.jpg" data-caption="Naming Ceremony Invitation Flyer">
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-content">
+    <span class="close">&times;</span>
+    <img src="" alt="" class="lightbox-image">
+    <p class="lightbox-caption"></p>
+  </div>
+</div>
+
+</div>
+        </section>
+        <section id="about" class="about">
+              <h1>About</h1>
+              <h4 >A Graphic Designer &amp; An Aspiring Web Developer</h4>
+                   <div class="div1" >
+                    <div id="div3" > 
+                  
+                      <ul>
+                        <li><i class="fa-solid fa-star"></i><strong>Skills:</strong> <span>Frontend (HTML, CSS, JAVASCRIPT)</span></li>
+                        <li><i class="fa-solid fa-star"></i><strong>Mastery:</strong> <span>Graphic Designing</span></li>
+                        <li><i class="fa-solid fa-mobile"></i> <strong>Phone:</strong> <span>+233 256 237 301</span></li>
+                        <li><i class="fa-solid fa-envelope-circle-check"></i><strong>Email:</strong> <span>kokosuwinifred@gmail.com</span></li>
+                      </ul>
+            </div>
+            <div id="div4">
+                <p > I am excited to share my passion and pursuit with you. I am an undergraduate computer science student of Ghana Communication Technology University. 
+                   I have a keen interest in graphic designing.
+               As I continue to grow and learn, I am eager to explore new areas of interest, including web development. Thank you for visiting my portfolio. I look forward to sharing my projects and experiences with you! </p>
+            </div>
+          </div>
+          </section>
+        <section id="contact" style="padding-top: 50px ;">
+          <h1 style="text-align: center;     font-size: 24px;">Contact</h1>
+        <div class="contactsection">
+          
+            <header>
+              <h4 id="title">Contact Info</h4>
+              <p id="description">I'd love your feedback! Please fill out the form below.</p>
+            </header>
+            <form id="survey-form">
+              <label id="name-label" for="name-label">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" >
+              <span id="error-message-name"></span>
+
+              <label id="email-label" for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email">
+              <span id="error-message-email"></span>
+
+        
+              <label id="number-label" for="age">Telephone Number</label>
+              <input type="text" id="number" name="number" placeholder="Enter your telephone number" >
+              <span id="error-message-number"></span>
+
+        
+              <label for="dropdown">Which option best describes your role?</label>
+              <select id="dropdown" name="role" >
+                <option value="" disabled selected>Select your role</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="developer">Developer</option>
+                <option value="other">Other</option>
+              </select>
+              <span id="error-message-selection"></span>
+        
+              <fieldset id="radio">
+                <legend>Would you recommend me to others?</legend>
+                <input type="radio" id="definitely" class="radio" name="recommend" value="definitely" >
+                <label for="definitely">Definitely</label>
+                <input type="radio" id="maybe" class="radio" name="recommend" value="maybe">
+                <label for="maybe">Maybe</label>
+                <input type="radio" id="not-sure" name="recommend"class="radio" value="not-sure">
+                <label for="not-sure">Not sure</label>
+              </fieldset>
+              <span id="error-message-radio"></span>
+        
+              <label for="comments">Any comments or suggestions?</label>
+              
+              <textarea id="comments" name="comments" class="comments" placeholder="Type here..."></textarea>
+               <span id="error-message-textarea"></span>
+              <button id="submit" type="submit">Submit</button>
+            </form>
+          </div>
+        </section>
+        <footer>
+          <div class="social-icons">
+            <i><a href="http://Wa.me/+233256237301" class="fa fa-whatsapp"></a></i>
+            <a href="https://www.snapchat.com/add/winifredesinam?share_id=guUNQ-X9uII&locale=en-GB" class="fa fa-snapchat"></a>
+            <a href="www.linkedin.com/in/winifred-kokosu-esinam-24694633a" class="fa fa-linkedin"></a>
+          </div>
+          <p class="copyright-section">&copy; 2025 <span>Winam Graphix</span>. Designed by <span>Winam. </span> All rights reserved.</p>
+          <i class="fa-solid fa-arrow-up-from-bracket" id="arrow"></i>
+        </footer>
+        
+    </div>
+</body>
+</html>
+ <script>
+  
+  window.addEventListener("load", function() {
+    const loader = document.getElementById("loader-overlay");
+
+    // Minimum time to show the loader (in milliseconds)
+    const minDisplayTime = 3000; // 2 seconds
+
+    // Delay hiding the loader
+    setTimeout(() => {
+      loader.style.display = "none";
+    }, minDisplayTime);
+  });
+  // Add event listener to navigation links
+  document.addEventListener('DOMContentLoaded', function() {
+     const navLinks = document.querySelectorAll('.navcontainer a');
+     navLinks.forEach(link => {
+         link.addEventListener('click', function() {
+             const targetId = link.getAttribute('href');
+             const targetElement = document.querySelector(targetId);
+             targetElement.scrollIntoView({ behavior: 'smooth' });
+         });
+     });
+ });
+ 
+const theP = document.getElementsByClassName("myname")[0];
+const myName = "Hey! I am Winifred.";
+let index = 0;
+ 
+
+ function typeWriter(){
+if(index < myName.length){
+  theP.innerHTML += myName.charAt(index);
+  setTimeout(function(){
+    typeWriter()
+  }, 100);
+}
+index++
+ }
+ typeWriter()
+
+
+const arrow = document.getElementById("arrow");
+window.addEventListener("scroll", function(){
+  if(window.scrollY > 50){
+arrow.style.display = "block";
+  }
+  else{
+    arrow.style.display = "none";
+  }
+})
+
+arrow.addEventListener("click", function(){
+window.scrollTo({
+  top: 0, 
+  behavior:"smooth"
+})  
+})
+
+
+const images = document.querySelectorAll('.images img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImage = document.querySelector('.lightbox-image');
+const lightboxCaption = document.querySelector('.lightbox-caption');
+const close = document.querySelector('.close');
+
+images.forEach((image) => {
+  image.addEventListener('click', () => {
+    lightboxImage.src = image.src;
+    lightboxCaption.textContent = image.getAttribute('data-caption');
+    lightbox.style.display = 'block';
+  });
+});
+
+close.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = 'none';
+  }
+});
+
+const form = document.getElementById('survey-form');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const numberInput = document.getElementById('number')
+const errorMessageName = document.getElementById('error-message-name');
+const errorMessageEmail = document.getElementById('error-message-email');
+const errorMessageNumber = document.getElementById('error-message-number')
+const text = document.getElementById("comments");
+const textInput = document.getElementById('error-message-textarea')
+const selection = document.getElementById('dropdown');
+const seLect = document.getElementById('error-message-selection')
+const field = document.getElementById('definitely');
+const maybe = document.getElementById('maybe')
+const notSure = document.getElementById('not-sure')
+const radio = document.getElementById('error-message-radio')
+const radioArray = []
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (nameInput.value.trim() === '') {
+    errorMessageName.textContent = 'Please enter your name';
+    nameInput.style.border="1px solid red";
+  } 
+  
+
+  if (emailInput.value.trim() === '') {
+    errorMessageEmail.textContent = 'Please enter your email';
+    emailInput.style.border="1px solid red";
+  } 
+  if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(emailInput.value)){
+    errorMessageEmail.textContent = 'Please enter your telephone number'
+  }
+
+  if (numberInput.value.trim() === '') {
+    errorMessageNumber.textContent = 'Please enter your telephone number';
+    numberInput.style.border="1px solid red";
+  } 
+  if(!/^[0-9]{10}$/.test(numberInput.value)){
+ errorMessageNumber.textContent = 'Please enter your telephone number'
+}
+if(text.value.length >50){
+  textInput.textContent = "Maximum of 50 characters!";
+  text.style.border = "1px solid red";
+}
+if(!selection.value){
+  seLect.textContent = "Please select one"
+}
+if(!radioArray.length){
+  radio.textContent = "Please select an option"
+}
+
+
+console.log(field.checked === "checked")
+});
+
+
+
+for (let i = 0; i < 3; i++ ){
+ document.getElementsByClassName("radio")[i].addEventListener("click", function(e){
+    radioArray.push(this.value)
+ })
+}
+
+
+ </script>
+ 
+
+
+ 
